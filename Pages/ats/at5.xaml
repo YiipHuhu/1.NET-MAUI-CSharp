@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrabalhoTaffeV2.Pages.at5"
+             Title="Calculadora de IMC"
+             BackgroundColor="White">
+    <Border
+        BackgroundColor="#480048" 
+        StrokeShape="RoundRectangle 10,10, 10, 10"
+        Padding="30"
+        WidthRequest="390"
+        HeightRequest="700">
+        <VerticalStackLayout>
+        <Label 
+            Text="Calculadora de IMC" FontSize="Large" TextColor="White"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Label Text="Digite seu peso" FontSize="Medium" TextColor="White"/>
+            <Entry x:Name="txtPeso" Placeholder="Digite seu peso" TextColor="White"/>
+            <Label Text="Digite sua altura" FontSize="Medium" TextColor="White"/>
+            <Entry x:Name="txtAltura" Placeholder="Digite sua altura" TextColor="White"/>
+            <Button Text="Calcular" Clicked="Button_Clicked" BackgroundColor="#300030" TextColor="White"/>
+            <Label x:Name="lblResultado" FontSize="Medium" TextColor="White"/>
+        </VerticalStackLayout>
+    </Border>
+</ContentPage>

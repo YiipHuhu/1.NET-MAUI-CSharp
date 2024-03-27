@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrabalhoTaffeV2.MainPage"
+             BackgroundColor="white">
+
+    
+
+        <ScrollView>
+            <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+                <Image
+                Source="appicon.jpg"
+                HeightRequest="250"
+                HorizontalOptions="Center" />
+                <Border
+                BackgroundColor="#480048"
+                StrokeShape="RoundRectangle 10,10, 10, 10"
+                Padding="30"
+                WidthRequest="390"
+                >
+                    <VerticalStackLayout>
+                        <Label
+                    Text="Olá, por favor faça seu login!"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    FontSize="32"
+                    TextColor="White"
+                    HorizontalOptions="Center" />
+
+                        <Label
+                    Text="Programa feito em .NET MAUI e C#."
+                    TextColor="White"
+                    FontSize="18"
+                    HorizontalOptions="Center" />
+
+                        <Button
+                    Text="Login"
+                    TextColor="White"
+                    BackgroundColor="#300030"
+                    Clicked="lgnscreen"
+                    HorizontalOptions="Center" />
+
+                    
+
+                </VerticalStackLayout>
+
+                </Border>
+            <Button Text="Sobre" HorizontalOptions="Center" BackgroundColor="#300030" Clicked="sobre" TextColor="White"/>
+        </VerticalStackLayout>
+
+        </ScrollView>
+
+    </ContentPage>

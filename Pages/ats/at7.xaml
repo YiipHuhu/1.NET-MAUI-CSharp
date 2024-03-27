@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrabalhoTaffeV2.Pages.at7"
+             Title="Calculadora de Descontos"
+             BackgroundColor="White">
+    <Border
+        BackgroundColor="#480048" 
+        StrokeShape="RoundRectangle 10,10, 10, 10"
+        Padding="30"
+        WidthRequest="390"
+        HeightRequest="700">
+
+        <VerticalStackLayout>
+            <Label 
+            Text="Calculadora de descontos" TextColor="White"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Label Text="Valor do produto" TextColor="White"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Entry x:Name="txtValor" TextColor="White"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label Text="Desconto" TextColor="White"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Entry x:Name="txtDesconto" TextColor="White"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Button Text="Calcular" Clicked="Button_Clicked" BackgroundColor="#300030" TextColor="White"/>
+            <Label x:Name="lblResultado" TextColor="White"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </Border>
+</ContentPage>

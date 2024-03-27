@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrabalhoTaffeV2.Pages.at9"
+             Title="Calcular Média de Idade"
+             BackgroundColor="White">
+    <Border
+        BackgroundColor="#480048" 
+        StrokeShape="RoundRectangle 10,10, 10, 10"
+        Padding="30"
+        WidthRequest="390"
+        HeightRequest="700">
+
+        <StackLayout Padding="20">
+            <Label Text="Calcular Media de idade" HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="White"/>
+            <Label Text="Digite a quantidade de alunos:" FontSize="Medium"  Margin="15" TextColor="White"/>
+            <Entry x:Name="alunosEntry" Placeholder="Quantidade de alunos" BackgroundColor="black" TextColor="White"/>
+            <Button Text="Calcular Média" Clicked="CalcularMediaClicked" Margin="15" BackgroundColor="#300030" TextColor="White"/>
+            <Label x:Name="resultadoLabel" FontSize="Medium" TextColor="White"/>
+            <Button Text="Adicionar Aluno" Clicked="AdicionarAlunoClicked" Margin="15" BackgroundColor="#300030" TextColor="White"/>
+        </StackLayout>
+    </Border>
+</ContentPage>

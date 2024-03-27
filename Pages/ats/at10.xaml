@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrabalhoTaffeV2.Pages.at10"
+             Title="Tabuada"
+             BackgroundColor="White">
+    <Border
+        BackgroundColor="#480048" 
+        StrokeShape="RoundRectangle 10,10, 10, 10"
+        Padding="30"
+        WidthRequest="390"
+        HeightRequest="700">
+        <StackLayout Padding="20">
+            <Label Text="Escolha a tabuada que deseja ver:" TextColor="White"
+               FontSize="Medium"
+               VerticalOptions="Start"
+                   HorizontalOptions="Center"/>
+
+
+            <Entry x:Name="TabuadaEntry" VerticalOptions="Start" Margin="20" TextColor="White"
+               Placeholder="Digite um número"
+               Keyboard="Numeric"/>
+
+            <Button Text="Mostrar Tabuada" BackgroundColor="#300030" TextColor="White"
+                Clicked="MostrarTabuada_Clicked"
+                VerticalOptions="Start" />
+            <Frame x:Name="ResultadoFrame" BackgroundColor="#300030" CornerRadius="10" Padding="20" IsVisible="False" Margin="10">
+                <Label x:Name="ResultadoLabel" TextColor="White"
+               FontSize="18"
+               VerticalOptions="Start" />
+            </Frame>
+        </StackLayout>
+    </Border>
+</ContentPage>

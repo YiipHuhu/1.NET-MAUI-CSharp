@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrabalhoTaffeV2.Pages.at4"
+             Title="Conversor °C e °F"
+             BackgroundColor="White">
+    <Border
+        BackgroundColor="#480048" 
+        StrokeShape="RoundRectangle 10,10, 10, 10"
+        Padding="30"
+        WidthRequest="390"
+        HeightRequest="700">
+        <StackLayout VerticalOptions="CenterAndExpand">
+        <Label Text="Conversor de Temperatura"
+               FontSize="24"
+               TextColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="StartAndExpand"/>
+            <Picker x:Name="picker1"
+                    Title="Escolha a conversão"
+                    TextColor="White"
+                    FontSize="18"
+                    HorizontalOptions="FillAndExpand" BackgroundColor="#300030">
+                <Picker.Items>
+                    <x:String>Celsius para Fahrenheit</x:String>
+                    <x:String>Fahrenheit para Celsius</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Entry x:Name="temperatura"
+               Placeholder="Digite a temperatura"
+               Keyboard="Numeric"
+               Margin="0,20,0,0"
+               BackgroundColor="#300030"
+               TextColor="white"
+               FontSize="18"
+               HorizontalOptions="FillAndExpand" />
+
+        <Button Text="Converter"
+                BackgroundColor="#300030"
+                TextColor="White"
+                FontSize="18"
+                Margin="0,20,0,0"
+                HorizontalOptions="FillAndExpand"
+                Clicked="converterclicked" />
+
+        <Label x:Name="resultadoLabel"
+               Text=""
+               FontSize="24"
+               TextColor="White"
+               HorizontalOptions="Center"
+               Margin="0,20,0,0" />
+    </StackLayout>
+    </Border>
+</ContentPage>

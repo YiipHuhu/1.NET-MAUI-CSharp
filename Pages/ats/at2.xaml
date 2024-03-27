@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrabalhoTaffeV2.Pages.at2"
+             Title="Classifi. de Idade"
+             BackgroundColor="White">
+    <Border
+        BackgroundColor="#480048" 
+        StrokeShape="RoundRectangle 10,10, 10, 10"
+        Padding="30"
+        WidthRequest="390"
+        HeightRequest="700">
+        <VerticalStackLayout>
+            <VerticalStackLayout>
+                <Label 
+                        Text="Classificador de faixa etaria" TextColor="White"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" 
+                        FontSize="Medium"/>
+                <Label 
+                        Text="Digite a idade do individuo:" TextColor="White"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" 
+                        Padding="20"
+                        FontSize="Medium"/>
+                    <Entry 
+                        x:Name="idadeEntry" TextColor="White"
+                        Placeholder="Idade"
+                        Keyboard="Numeric"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        Margin="20" 
+                        BackgroundColor="Black"/>
+                    <Button 
+                        Text="Verificar" BackgroundColor="#300030"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" TextColor="White"
+                        Clicked="verific_Clicked" />
+                    <Label 
+                        x:Name="resultado" TextColor="White"
+                        Text=""
+                        FontSize="Medium"
+                        Padding="30"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" />
+                </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </Border>
+</ContentPage>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrabalhoTaffeV2.Pages.at1"
+             Title="Login"
+             BackgroundColor="white">
+    <Border
+        BackgroundColor="#480048" 
+        StrokeShape="RoundRectangle 10,10, 10, 10"
+        Padding="30"
+        WidthRequest="390"
+        HeightRequest="700">
+
+        <VerticalStackLayout>
+
+            <Label 
+                Text="Digite suas credenciais!"
+                TextColor="White"
+                FontSize="Large"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label Text="Digite seu Usuário:" TextColor="White"
+                   Padding="15"/>
+            
+            <Frame CornerRadius="10" BorderColor="Gray" Padding="0" Margin="0">
+                <Entry Placeholder="Insira o usuario aqui:" TextColor="White" 
+                   Keyboard="Text"
+                   MaxLength="40"
+                   x:Name="usuariodig"
+                   BackgroundColor="black"
+                   PlaceholderColor="Gray"/>
+            </Frame>
+
+            <Label Text="Digite sua Senha:" TextColor="White"
+                   Padding="15"/>
+            <Frame CornerRadius="10" BorderColor="Gray" Padding="0" Margin="0">
+                <Entry Placeholder="Insira a senha aqui:" TextColor="White"
+                   Keyboard="Text"
+                   MaxLength="32"
+                   IsPassword="True"
+                   x:Name="senhadig"
+                   BackgroundColor="black"
+                   PlaceholderColor="Gray"/>
+            </Frame>
+
+            <Button Text="Entrar" TextColor="White" BackgroundColor="#300030"
+                    Clicked="Button_Clicked"
+                    Margin="10"/>
+
+            <Label Text="Não possui cadastro? Realize abaixo." TextColor="White"
+                   HorizontalOptions="CenterAndExpand"
+                   Padding="15"/>
+
+            <Button Text="Cadastre-se" TextColor="White" BackgroundColor="#300030"
+                    Clicked="cadastro_clicked"
+                    Margin="10"/>
+            <Label Text="Nenhuma informação digitada aqui será salva!." TextColor="White"
+                  HorizontalOptions="CenterAndExpand"
+                  Padding="5"/>
+            <Image Source="gatocafe2.png" 
+                   WidthRequest="200"
+                   HeightRequest="200"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"/>
+        </VerticalStackLayout>
+    </Border>
+</ContentPage>

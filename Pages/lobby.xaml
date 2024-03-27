@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrabalhoTaffeV2.Pages.lobby"
+             Title="Escolha o exercício"
+             BackgroundColor="White">
+
+
+    <ScrollView>
+        <Border
+    BackgroundColor="#480048"
+    StrokeShape="RoundRectangle 10,10, 10, 10"
+    Padding="20"
+    WidthRequest="390"
+    HeightRequest="650"
+    HorizontalOptions="CenterAndExpand"
+    VerticalOptions="CenterAndExpand">
+
+           
+            <VerticalStackLayout>
+                    
+                <Button Text = "1 - Login" CommandParameter="1" Clicked="nselect"  HorizontalOptions="Start" Margin="5" BackgroundColor="#300030" TextColor="White"/>
+                <Button Text = "2 - Classifi. de Idade" CommandParameter="2" Clicked="nselect" HorizontalOptions="Start" Margin="5" BackgroundColor="#300030" TextColor="White"/>
+                <Button Text = "3 - Calculadora" CommandParameter="3" Clicked="nselect" HorizontalOptions="Start" Margin="5" BackgroundColor="#300030" TextColor="White"/>
+                <Button Text = "4 - Conversor °C e °F" CommandParameter="4" Clicked="nselect" HorizontalOptions="Start" Margin="5" BackgroundColor="#300030" TextColor="White"/>
+                <Button Text = "5 - Calculadora de IMC" CommandParameter="5" Clicked="nselect" HorizontalOptions="Start" Margin="5" BackgroundColor="#300030" TextColor="White"/>
+                <Button Text = "6 - Vogal ou Consoante?" CommandParameter="6" Clicked="nselect" HorizontalOptions="Start" Margin="5"  BackgroundColor="#300030" TextColor="White"/>
+                <Button Text = "7 - Calculadora de Descontos" CommandParameter="7" Clicked="nselect" HorizontalOptions="Start" Margin="5"  BackgroundColor="#300030" TextColor="White"/>
+                <Button Text = "8 - Sorteador de Números (Jogo)" CommandParameter="8" Clicked="nselect" HorizontalOptions="Start" Margin="5"  BackgroundColor="#300030" TextColor="White"/>
+                <Button Text = "9 - Calcular Média de Idade" CommandParameter="9" Clicked="nselect" HorizontalOptions="Start" Margin="5" BackgroundColor="#300030" TextColor="White"/>
+                <Button Text = "10 - Tabuada" CommandParameter="10" Clicked="nselect" HorizontalOptions="Start" Margin="5" BackgroundColor="#300030" TextColor="White"/>
+                <Button Text = "11 - Calcular Média de notas" CommandParameter="11" Clicked="nselect" HorizontalOptions="Start" Margin="5" BackgroundColor="#300030" TextColor="White"/>
+
+            </VerticalStackLayout>
+
+
+        </Border>
+    </ScrollView>
+</ContentPage>
